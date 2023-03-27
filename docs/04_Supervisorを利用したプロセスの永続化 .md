@@ -28,7 +28,7 @@ sudo ln -s /home/ubuntu/django-deploy-sample/supervisor_config/django-deploy-sam
 以下のコマンドで、Supervisor を再起動します。
 
 ```bash
-sudo systemctl supervisor restart
+sudo systemctl restart supervisor
 ```
 
 以下のコマンドで、Supervisor が uWSGI のプログラムを起動できているか確認します。
@@ -51,7 +51,7 @@ sudo systemctl enable supervisor
 
 ## 4. 接続確認
 
-以下の URL にアクセスして、動作を確認してみます。
+以下の URL にアクセスして、動作を確認してみます。  
 `http://<EC2 インスタンスのパブリック IP>`  
 Django のアプリケーションの画面がブラウザに表示されたら、正しく設定できています。
 
@@ -59,7 +59,7 @@ Django のアプリケーションの画面がブラウザに表示されたら�
 
 Django アプリケーションの自動起動と永続化が設定できたことを確認します。
 
-EC2 インスタンスに接続している SSH コンソールをすべて終了し、EC2 インスタンスを停止します。
+EC2 インスタンスに接続している SSH コンソールをすべて終了し、EC2 インスタンスを停止します。  
 停止した後、EC2 インスタンスを起動しなおします。  
 起動できたら、ブラウザから EC2 インスタンスのパブリック IP アドレスにアクセスします。
 
