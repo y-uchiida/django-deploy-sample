@@ -10,6 +10,8 @@ packages = [{include = "django_sample"}]
 python = "^3.9"
 django = "3.2"
 django-environ = "^0.10.0"
+uwsgi = "^2.0.21"
+psycopg2-binary = "^2.9.5"
 
 
 [build-system]
